@@ -18,4 +18,14 @@
   .track-info{
     display: block;
   }
+
+  .btn-holder {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: flex-end;
+    align-content: flex-end;
+  }
 }
