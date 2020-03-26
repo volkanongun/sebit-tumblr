@@ -1,0 +1,21 @@
+.container{
+  width: 600px;
+}
+
+.post{
+  background: #e9ecef;
+  padding: 2rem;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  border:1px solid #a1aebb;
+
+  time{
+    margin-bottom: 1rem;
+    display: block;
+    opacity: .7;
+  }
+
+  .track-info{
+    display: block;
+  }
+}

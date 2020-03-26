@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.scss'; 
 import data from "./data.json";
 import Post from "./components/Post";
@@ -7,21 +6,22 @@ import Post from "./components/Post";
 function App() {
 
   console.log(data.posts, " ∆")
-  console.log(data['posts-total'], " ∆")
 
   return (
     <div className="App">
       <div className="container">
         <section className="jumbotron text-center">
-          <div className="container">
+          <div>
             <h1>Sebit Tumblr Demo</h1>
+            <h2>({data['posts-total']} posts)</h2>
           </div>
         </section>
         <div>
           {data.posts.map(function(elem,i){
-            return <Post title={elem["regular-title"]} id={elem.id} key={elem.id} type={elem.type}></Post>
+            return <Post post={elem} title={elem["regular-title"]} id={elem.id} key={elem.id} type={elem.type}></Post>
           })}
         </div>
+        <footer> Powered by React ® </footer>
       </div>
     </div>
   );
