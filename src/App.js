@@ -8,6 +8,8 @@ function App() {
   const [dataState, setDataState] = useState({
     posts : data.posts
   })
+
+  console.log(data.posts);
   
   const handleClick = function (e) {
     e.preventDefault();
